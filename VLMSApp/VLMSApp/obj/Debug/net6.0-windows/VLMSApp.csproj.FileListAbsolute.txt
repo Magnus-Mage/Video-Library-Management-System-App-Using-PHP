@@ -1,0 +1,17 @@
+C:\Dev\Projects\DBMS\Video-Library-Management-System-App-Using-PHP\VLMSApp\VLMSApp\bin\Debug\net6.0-windows\VLMSApp.exe
+C:\Dev\Projects\DBMS\Video-Library-Management-System-App-Using-PHP\VLMSApp\VLMSApp\bin\Debug\net6.0-windows\VLMSApp.deps.json
+C:\Dev\Projects\DBMS\Video-Library-Management-System-App-Using-PHP\VLMSApp\VLMSApp\bin\Debug\net6.0-windows\VLMSApp.runtimeconfig.json
+C:\Dev\Projects\DBMS\Video-Library-Management-System-App-Using-PHP\VLMSApp\VLMSApp\bin\Debug\net6.0-windows\VLMSApp.dll
+C:\Dev\Projects\DBMS\Video-Library-Management-System-App-Using-PHP\VLMSApp\VLMSApp\bin\Debug\net6.0-windows\VLMSApp.pdb
+C:\Dev\Projects\DBMS\Video-Library-Management-System-App-Using-PHP\VLMSApp\VLMSApp\obj\Debug\net6.0-windows\VLMSApp.csproj.AssemblyReference.cache
+C:\Dev\Projects\DBMS\Video-Library-Management-System-App-Using-PHP\VLMSApp\VLMSApp\obj\Debug\net6.0-windows\VLMSApp.Form1.resources
+C:\Dev\Projects\DBMS\Video-Library-Management-System-App-Using-PHP\VLMSApp\VLMSApp\obj\Debug\net6.0-windows\VLMSApp.csproj.GenerateResource.cache
+C:\Dev\Projects\DBMS\Video-Library-Management-System-App-Using-PHP\VLMSApp\VLMSApp\obj\Debug\net6.0-windows\VLMSApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\Projects\DBMS\Video-Library-Management-System-App-Using-PHP\VLMSApp\VLMSApp\obj\Debug\net6.0-windows\VLMSApp.AssemblyInfoInputs.cache
+C:\Dev\Projects\DBMS\Video-Library-Management-System-App-Using-PHP\VLMSApp\VLMSApp\obj\Debug\net6.0-windows\VLMSApp.AssemblyInfo.cs
+C:\Dev\Projects\DBMS\Video-Library-Management-System-App-Using-PHP\VLMSApp\VLMSApp\obj\Debug\net6.0-windows\VLMSApp.csproj.CoreCompileInputs.cache
+C:\Dev\Projects\DBMS\Video-Library-Management-System-App-Using-PHP\VLMSApp\VLMSApp\obj\Debug\net6.0-windows\VLMSApp.dll
+C:\Dev\Projects\DBMS\Video-Library-Management-System-App-Using-PHP\VLMSApp\VLMSApp\obj\Debug\net6.0-windows\refint\VLMSApp.dll
+C:\Dev\Projects\DBMS\Video-Library-Management-System-App-Using-PHP\VLMSApp\VLMSApp\obj\Debug\net6.0-windows\VLMSApp.pdb
+C:\Dev\Projects\DBMS\Video-Library-Management-System-App-Using-PHP\VLMSApp\VLMSApp\obj\Debug\net6.0-windows\VLMSApp.genruntimeconfig.cache
+C:\Dev\Projects\DBMS\Video-Library-Management-System-App-Using-PHP\VLMSApp\VLMSApp\obj\Debug\net6.0-windows\ref\VLMSApp.dll
