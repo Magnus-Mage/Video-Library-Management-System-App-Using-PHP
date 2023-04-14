@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "d+J703U3MJCX7WI7pD/E4sV+SE085ZdjFdTeYV7grxyHHGSNcECXct9R2Nq5fxmlc3Tf6QmpjAnskfS24ghcTA==",
+  "dgSpecHash": "6a/G+DfDkZdZ+L7Yd16dfzNwxnSzfDK/ezoOFGAtT8cMS4872FU3RBuca0s0KmPufjpbScD3bbbeislyvwLIJg==",
   "success": true,
   "projectFilePath": "C:\\Dev\\Projects\\DBMS\\Video-Library-Management-System-App-Using-PHP\\VLMSApp\\VLMSApp\\VLMSApp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\romes\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512",
     "C:\\Users\\romes\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\romes\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",
     "C:\\Users\\romes\\.nuget\\packages\\k4os.compression.lz4.streams\\1.2.6\\k4os.compression.lz4.streams.1.2.6.nupkg.sha512",

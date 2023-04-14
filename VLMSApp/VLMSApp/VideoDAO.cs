@@ -43,13 +43,63 @@ namespace VLMSApp
                         cost_dollars = reader.GetInt32(9),
                         image_name = reader.GetString(10),
 
-                    }
+                    };
+                    returnThese.Add(v);
                 }
             }
+            connection.Close();
 
 
 
-                return returnThese;
+            return returnThese;
+        }
+
+        public List<Video_data> searchTitles(string searchTerm)
+        {
+            List<Video_data> returnThese = new List<Video_data>();
+
+            //sql connection
+
+            MySqlConnection connection = new MySqlConnection(connectionString);
+            connection.Open();
+
+            string searchWildPhrase = "%" + searchTerm + "%";
+
+            //define sql statement to fetch all video_data
+            MySqlCommand command = new MySqlCommand();
+
+            command.CommandText = "SELECT * FROM video_data WHERE title or video_id LIKE @search";
+
+            command.Parameters.AddWithValue("@search", searchWildPhrase);
+            command.Connection = connection;
+
+            using (MySqlDataReader reader = command.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    Video_data v = new Video_data
+                    {
+                        video_id = reader.GetInt32(0),
+                        title = reader.GetString(1),
+                        director = reader.GetString(2),
+                        release_year = reader.GetInt32(3),
+                        genre = reader.GetString(4),
+                        summary = reader.GetString(5),
+                        actors = reader.GetString(6),
+                        upload_datetime = reader.GetDateTime(7),
+                        duration_minutes = reader.GetInt32(8),
+                        cost_dollars = reader.GetDouble(9),
+                        image_name = reader.GetString(10),
+
+                    };
+                    returnThese.Add(v);
+                }
+            }
+            connection.Close();
+
+
+
+            return returnThese;
         }
     }
 }

@@ -27,3 +27,5 @@ C:\Dev\Projects\DBMS\Video-Library-Management-System-App-Using-PHP\VLMSApp\VLMSA
 C:\Dev\Projects\DBMS\Video-Library-Management-System-App-Using-PHP\VLMSApp\VLMSApp\bin\Debug\net6.0-windows\runtimes\win-x64\native\krb5_64.dll
 C:\Dev\Projects\DBMS\Video-Library-Management-System-App-Using-PHP\VLMSApp\VLMSApp\bin\Debug\net6.0-windows\runtimes\win-x64\native\krbcc64.dll
 C:\Dev\Projects\DBMS\Video-Library-Management-System-App-Using-PHP\VLMSApp\VLMSApp\obj\Debug\net6.0-windows\VLMSApp.csproj.CopyComplete
+C:\Dev\Projects\DBMS\Video-Library-Management-System-App-Using-PHP\VLMSApp\VLMSApp\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
+C:\Dev\Projects\DBMS\Video-Library-Management-System-App-Using-PHP\VLMSApp\VLMSApp\obj\Debug\net6.0-windows\VLMSApp.Properties.Resources.resources
