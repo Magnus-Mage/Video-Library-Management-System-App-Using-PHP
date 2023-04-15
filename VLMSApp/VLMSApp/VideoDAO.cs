@@ -68,7 +68,7 @@ namespace VLMSApp
             //define sql statement to fetch all video_data
             MySqlCommand command = new MySqlCommand();
 
-            command.CommandText = "SELECT * FROM video_data WHERE title or video_id LIKE @search";
+            command.CommandText = "SELECT * FROM video_data WHERE title LIKE @search";
 
             command.Parameters.AddWithValue("@search", searchWildPhrase);
             command.Connection = connection;
@@ -101,5 +101,6 @@ namespace VLMSApp
 
             return returnThese;
         }
+
     }
 }

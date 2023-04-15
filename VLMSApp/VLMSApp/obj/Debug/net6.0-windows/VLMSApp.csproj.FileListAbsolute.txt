@@ -34,3 +34,4 @@ C:\Dev\Projects\DBMS\Video-Library-Management-System-App-Using-PHP\VLMSApp\VLMSA
 C:\Dev\Projects\DBMS\Video-Library-Management-System-App-Using-PHP\VLMSApp\VLMSApp\obj\Debug\net6.0-windows\VLMSApp.Forms.FormInventory.resources
 C:\Dev\Projects\DBMS\Video-Library-Management-System-App-Using-PHP\VLMSApp\VLMSApp\obj\Debug\net6.0-windows\VLMSApp.Forms.FormHelp.resources
 C:\Dev\Projects\DBMS\Video-Library-Management-System-App-Using-PHP\VLMSApp\VLMSApp\obj\Debug\net6.0-windows\VLMSApp.Forms.FormMembers.resources
+C:\Dev\Projects\DBMS\Video-Library-Management-System-App-Using-PHP\VLMSApp\VLMSApp\obj\Debug\net6.0-windows\VLMSApp.FormLogincs.resources

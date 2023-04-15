@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace VLMSApp.Forms
 {
@@ -16,8 +17,10 @@ namespace VLMSApp.Forms
         {
             InitializeComponent();
         }
+
         BindingSource videoBindingSource = new BindingSource();
-        private void button1_Click(object sender, EventArgs e)
+
+        private void DLoadRecord_Click(object sender, EventArgs e)
         {
             VideoDAO videoDAO = new VideoDAO();
 
@@ -25,23 +28,23 @@ namespace VLMSApp.Forms
 
             videoBindingSource.DataSource = videoDAO.getAllVideo_data();
 
-            dataGridView1.DataSource = videoBindingSource;
+            DdataGridView.DataSource = videoBindingSource;
 
-            pictureBox1.Load("https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/225px-Wikipedia-logo-v2.svg.png");
+            DpictureBox.Load("https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/225px-Wikipedia-logo-v2.svg.png");
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void DSearchButton_Click(object sender, EventArgs e)
         {
             VideoDAO videoDAO = new VideoDAO();
 
             //connect the list to the grid view control
 
-            videoBindingSource.DataSource = videoDAO.searchTitles(textBox1.Text);
+            videoBindingSource.DataSource = videoDAO.searchTitles(DSearch.Text);
 
-            dataGridView1.DataSource = videoBindingSource;
+            DdataGridView.DataSource = videoBindingSource;
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void DdataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridView dataGridView = (DataGridView)sender;
 
@@ -54,7 +57,7 @@ namespace VLMSApp.Forms
 
             //MessageBox.Show(" URL " + image_name);
 
-            pictureBox1.Load(image_name);
+            DpictureBox.Load(image_name);
         }
 
         private void FormDashBoard_Load(object sender, EventArgs e)

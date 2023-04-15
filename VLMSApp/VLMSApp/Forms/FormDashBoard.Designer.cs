@@ -29,78 +29,78 @@
         private void InitializeComponent()
         {
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.DpictureBox = new System.Windows.Forms.PictureBox();
+            this.DdataGridView = new System.Windows.Forms.DataGridView();
+            this.DLoadRecord = new System.Windows.Forms.Button();
+            this.DSearch = new System.Windows.Forms.TextBox();
+            this.DSearchButton = new System.Windows.Forms.Button();
             this.panelDesktop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DpictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DdataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panelDesktop.Controls.Add(this.pictureBox1);
-            this.panelDesktop.Controls.Add(this.dataGridView1);
-            this.panelDesktop.Controls.Add(this.button1);
-            this.panelDesktop.Controls.Add(this.textBox1);
-            this.panelDesktop.Controls.Add(this.button2);
+            this.panelDesktop.Controls.Add(this.DpictureBox);
+            this.panelDesktop.Controls.Add(this.DdataGridView);
+            this.panelDesktop.Controls.Add(this.DSearchButton);
+            this.panelDesktop.Controls.Add(this.DSearch);
+            this.panelDesktop.Controls.Add(this.DLoadRecord);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(0, 0);
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(1059, 510);
             this.panelDesktop.TabIndex = 11;
             // 
-            // pictureBox1
+            // DpictureBox
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 102);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(282, 294);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
+            this.DpictureBox.Location = new System.Drawing.Point(12, 102);
+            this.DpictureBox.Name = "DpictureBox";
+            this.DpictureBox.Size = new System.Drawing.Size(282, 294);
+            this.DpictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.DpictureBox.TabIndex = 9;
+            this.DpictureBox.TabStop = false;
             // 
-            // dataGridView1
+            // DdataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(300, 102);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(736, 294);
-            this.dataGridView1.TabIndex = 6;
+            this.DdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DdataGridView.Location = new System.Drawing.Point(300, 102);
+            this.DdataGridView.Name = "DdataGridView";
+            this.DdataGridView.RowHeadersWidth = 51;
+            this.DdataGridView.RowTemplate.Height = 29;
+            this.DdataGridView.Size = new System.Drawing.Size(736, 294);
+            this.DdataGridView.TabIndex = 6;
             // 
-            // button1
+            // DLoadRecord
             // 
-            this.button1.Location = new System.Drawing.Point(65, 49);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(229, 29);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Load Records";
-            this.button1.UseVisualStyleBackColor = true;
+            this.DLoadRecord.Location = new System.Drawing.Point(65, 49);
+            this.DLoadRecord.Name = "DLoadRecord";
+            this.DLoadRecord.Size = new System.Drawing.Size(229, 29);
+            this.DLoadRecord.TabIndex = 5;
+            this.DLoadRecord.Text = "Load Records";
+            this.DLoadRecord.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // DSearch
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(79)))), ((int)(((byte)(99)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox1.Location = new System.Drawing.Point(319, 54);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(602, 24);
-            this.textBox1.TabIndex = 8;
-            this.textBox1.Text = "Search...";
+            this.DSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(79)))), ((int)(((byte)(99)))));
+            this.DSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DSearch.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DSearch.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.DSearch.Location = new System.Drawing.Point(319, 54);
+            this.DSearch.Name = "DSearch";
+            this.DSearch.Size = new System.Drawing.Size(602, 24);
+            this.DSearch.TabIndex = 8;
+            this.DSearch.Text = "Search...";
             // 
-            // button2
+            // DSearchButton
             // 
-            this.button2.Location = new System.Drawing.Point(927, 49);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(109, 29);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Search";
-            this.button2.UseVisualStyleBackColor = true;
+            this.DSearchButton.Location = new System.Drawing.Point(927, 49);
+            this.DSearchButton.Name = "DSearchButton";
+            this.DSearchButton.Size = new System.Drawing.Size(109, 29);
+            this.DSearchButton.TabIndex = 7;
+            this.DSearchButton.Text = "Search";
+            this.DSearchButton.UseVisualStyleBackColor = true;
             // 
             // FormDashBoard
             // 
@@ -113,8 +113,8 @@
             this.Load += new System.EventHandler(this.FormDashBoard_Load);
             this.panelDesktop.ResumeLayout(false);
             this.panelDesktop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DpictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DdataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -122,10 +122,10 @@
         #endregion
 
         private Panel panelDesktop;
-        private PictureBox pictureBox1;
-        private DataGridView dataGridView1;
-        private Button button1;
-        private TextBox textBox1;
-        private Button button2;
+        private PictureBox DpictureBox;
+        private DataGridView DdataGridView;
+        private Button DLoadRecord;
+        private TextBox DSearch;
+        private Button DSearchButton;
     }
 }

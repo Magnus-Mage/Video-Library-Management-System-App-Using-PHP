@@ -19,6 +19,7 @@ namespace VLMSApp
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
+
         BindingSource videoBindingSource = new BindingSource();
 
         //Constructor

@@ -20,8 +20,46 @@ namespace VLMSApp.Forms
 
         BindingSource videoBindingSource = new BindingSource();
 
+        private void loadRecords_Click(object sender, EventArgs e)
+        {
+            VideoDAO videoDAO = new VideoDAO();
 
-        private void button1_Click(object sender, EventArgs e)
+            //connect the list to the grid view control
+
+            videoBindingSource.DataSource = videoDAO.getAllVideo_data();
+            videoDataGridView.DataSource = videoBindingSource;
+
+            videoPicture.Load("https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/225px-Wikipedia-logo-v2.svg.png");
+        }
+
+        private void searchRecords_Click(object sender, EventArgs e)
+        {
+            VideoDAO videoDAO = new VideoDAO();
+
+            //connect the list to the grid view control
+
+            videoBindingSource.DataSource = videoDAO.searchTitles(videoSearchBox.Text);
+
+            videoDataGridView.DataSource = videoBindingSource;
+            videoSearchBox.Clear();
+            
+        }
+
+        private void videoDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridView dataGridView = (DataGridView)sender;
+
+            //get the row clicked
+
+            int rowClicked = dataGridView.CurrentRow.Index;
+
+            string image_name = dataGridView.Rows[rowClicked].Cells[10].Value.ToString();
+
+            videoPicture.Load(image_name);
+        }
+
+
+        /*private void button1_Click(object sender, EventArgs e)
         {
             VideoDAO videoDAO = new VideoDAO();
 
@@ -59,6 +97,6 @@ namespace VLMSApp.Forms
             //MessageBox.Show(" URL " + image_name);
 
             pictureBox1.Load(image_name);
-        }
+        }*/
     }
 }
