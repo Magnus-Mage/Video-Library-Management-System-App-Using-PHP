@@ -28,11 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.Help = new FontAwesome.Sharp.IconButton();
             this.Inventory = new FontAwesome.Sharp.IconButton();
@@ -40,68 +35,21 @@
             this.Entries = new FontAwesome.Sharp.IconButton();
             this.DashBoard = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.MinimiseBtn = new FontAwesome.Sharp.IconPictureBox();
+            this.lblTitleChildForm = new System.Windows.Forms.Label();
+            this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.panelDesktop = new System.Windows.Forms.Panel();
+            this.panelShadow = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
+            this.panelTitleBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MinimiseBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(237, 69);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(229, 29);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Load Records";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(532, 140);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(868, 294);
-            this.dataGridView1.TabIndex = 1;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(1140, 69);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(109, 29);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Search";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(79)))), ((int)(((byte)(99)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox1.Location = new System.Drawing.Point(532, 74);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(602, 24);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "Search...";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(237, 140);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(282, 294);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
             // 
             // panelMenu
             // 
@@ -214,7 +162,7 @@
             this.DashBoard.FlatAppearance.BorderSize = 0;
             this.DashBoard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DashBoard.ForeColor = System.Drawing.Color.Gainsboro;
-            this.DashBoard.IconChar = FontAwesome.Sharp.IconChar.House;
+            this.DashBoard.IconChar = FontAwesome.Sharp.IconChar.BarChart;
             this.DashBoard.IconColor = System.Drawing.Color.Gainsboro;
             this.DashBoard.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.DashBoard.IconSize = 32;
@@ -239,29 +187,6 @@
             this.panel2.Size = new System.Drawing.Size(220, 140);
             this.panel2.TabIndex = 0;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.panel3.Controls.Add(this.button3);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(220, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1191, 41);
-            this.panel3.TabIndex = 6;
-            this.panel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnMouseDown);
-            // 
-            // button3
-            // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(1163, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(25, 25);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "X";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // btnHome
             // 
             this.btnHome.Image = global::VLMSApp.Properties.Resources.file2_0;
@@ -273,44 +198,119 @@
             this.btnHome.TabStop = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
+            // panelTitleBar
+            // 
+            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.panelTitleBar.Controls.Add(this.MinimiseBtn);
+            this.panelTitleBar.Controls.Add(this.lblTitleChildForm);
+            this.panelTitleBar.Controls.Add(this.iconCurrentChildForm);
+            this.panelTitleBar.Controls.Add(this.button3);
+            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
+            this.panelTitleBar.Name = "panelTitleBar";
+            this.panelTitleBar.Size = new System.Drawing.Size(1191, 70);
+            this.panelTitleBar.TabIndex = 6;
+            this.panelTitleBar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTitleBar_Paint);
+            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnMouseDown);
+            // 
+            // MinimiseBtn
+            // 
+            this.MinimiseBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.MinimiseBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.MinimiseBtn.IconChar = FontAwesome.Sharp.IconChar.Minus;
+            this.MinimiseBtn.IconColor = System.Drawing.Color.White;
+            this.MinimiseBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.MinimiseBtn.IconSize = 25;
+            this.MinimiseBtn.Location = new System.Drawing.Point(1123, 12);
+            this.MinimiseBtn.Name = "MinimiseBtn";
+            this.MinimiseBtn.Size = new System.Drawing.Size(25, 25);
+            this.MinimiseBtn.TabIndex = 3;
+            this.MinimiseBtn.TabStop = false;
+            this.MinimiseBtn.Click += new System.EventHandler(this.iconPictureBox1_Click);
+            // 
+            // lblTitleChildForm
+            // 
+            this.lblTitleChildForm.AutoSize = true;
+            this.lblTitleChildForm.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblTitleChildForm.Location = new System.Drawing.Point(60, 15);
+            this.lblTitleChildForm.Name = "lblTitleChildForm";
+            this.lblTitleChildForm.Size = new System.Drawing.Size(50, 20);
+            this.lblTitleChildForm.TabIndex = 2;
+            this.lblTitleChildForm.Text = "Home";
+            // 
+            // iconCurrentChildForm
+            // 
+            this.iconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.iconCurrentChildForm.ForeColor = System.Drawing.Color.MediumPurple;
+            this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.House;
+            this.iconCurrentChildForm.IconColor = System.Drawing.Color.MediumPurple;
+            this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconCurrentChildForm.IconSize = 40;
+            this.iconCurrentChildForm.Location = new System.Drawing.Point(17, 12);
+            this.iconCurrentChildForm.Name = "iconCurrentChildForm";
+            this.iconCurrentChildForm.Size = new System.Drawing.Size(40, 40);
+            this.iconCurrentChildForm.TabIndex = 1;
+            this.iconCurrentChildForm.TabStop = false;
+            // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(1154, 12);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(25, 25);
+            this.button3.TabIndex = 0;
+            this.button3.Text = "X";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // panelDesktop
+            // 
+            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Location = new System.Drawing.Point(220, 79);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(1191, 498);
+            this.panelDesktop.TabIndex = 8;
+            // 
+            // panelShadow
+            // 
+            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
+            this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelShadow.Location = new System.Drawing.Point(220, 70);
+            this.panelShadow.Name = "panelShadow";
+            this.panelShadow.Size = new System.Drawing.Size(1191, 9);
+            this.panelShadow.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(1411, 577);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panelDesktop);
+            this.Controls.Add(this.panelShadow);
+            this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelMenu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();
+            this.panelTitleBar.ResumeLayout(false);
+            this.panelTitleBar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MinimiseBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private Button button1;
-        private DataGridView dataGridView1;
-        private Button button2;
-        private TextBox textBox1;
-        private PictureBox pictureBox1;
         private Panel panelMenu;
         private Panel panel2;
-        private Panel panel3;
+        private Panel panelTitleBar;
         private Button button3;
         private FontAwesome.Sharp.IconButton Help;
         private FontAwesome.Sharp.IconButton Inventory;
@@ -318,5 +318,10 @@
         private FontAwesome.Sharp.IconButton Entries;
         private FontAwesome.Sharp.IconButton DashBoard;
         private PictureBox btnHome;
+        private FontAwesome.Sharp.IconPictureBox iconCurrentChildForm;
+        private Label lblTitleChildForm;
+        private Panel panelDesktop;
+        private Panel panelShadow;
+        private FontAwesome.Sharp.IconPictureBox MinimiseBtn;
     }
 }
