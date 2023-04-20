@@ -7,6 +7,9 @@
     <Compile Update="FormLogincs.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\FormDashBoard.cs">
       <SubType>Form</SubType>
     </Compile>

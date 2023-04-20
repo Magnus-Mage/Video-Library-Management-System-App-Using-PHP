@@ -22,17 +22,6 @@ namespace VLMSApp
         MySqlConnection connection = new MySqlConnection(@"datasource=localhost;port=3306;username=root;password=root;database=vlms;");
 
 
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FormLogincs_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void iconButton1_Click(object sender, EventArgs e)
         {
             
@@ -52,9 +41,9 @@ namespace VLMSApp
                 MessageBox.Show("Your Username or Password are Incorrect");
                 txtUsername.Clear();
                 txtPassword.Clear();
-            }
+            }*/
 
-            string getUsername = "%" + txtUsername + "%";
+            /*string getUsername = "%" + txtUsername + "%";
             string getPassword = "%" + txtPassword + "%";*/
 
 
@@ -116,6 +105,14 @@ namespace VLMSApp
         private void label3_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        
+
+        private void signUp_Click(object sender, EventArgs e)
+        {
+            new FormSignUp().Show();
+            this.Hide();
         }
     }
 }

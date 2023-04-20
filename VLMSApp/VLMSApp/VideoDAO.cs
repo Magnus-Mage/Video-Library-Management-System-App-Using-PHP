@@ -102,5 +102,41 @@ namespace VLMSApp
             return returnThese;
         }
 
+        internal int addNewLogin(loginInfo logininfo)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<loginInfo> getLoginInfo()
+        {
+            List<loginInfo> returnThese = new List<loginInfo>();
+
+            //sql connection
+
+            MySqlConnection connection = new MySqlConnection(connectionString);
+            connection.Open();
+
+            //define sql statement to fetch all video_data
+            MySqlCommand command = new MySqlCommand("SELECT * FROM login_data", connection);
+
+            using (MySqlDataReader reader = command.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    loginInfo l = new loginInfo
+                    {
+                        username = reader.GetString(0),
+                        password = reader.GetString (1),
+                    };
+                    returnThese.Add(l);
+                }
+            }
+            connection.Close();
+
+
+
+            return returnThese;
+        }
+
     }
 }
